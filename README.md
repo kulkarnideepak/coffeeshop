@@ -26,9 +26,9 @@ Once server is started the REST API endpoints will be available at following URL
 http://localhost:8080
 ```
 
-Coffee shop service provides following endpoints
+### Coffee shop service provides following endpoints
 
-Create:
+#### Create
 Accepts name, address, latitude, and longitude, adds a new coffee shop to the data set, and returns the id of the new coffee shop.
 
 ```js
@@ -49,7 +49,7 @@ Response
 	200 OK if the coffee shop is created successfully. Also an id of the coffee shop just created.
 ```
 
-Read:
+#### Read
 Accepts an id and returns the id, name, address, latitude, and longitude of the coffee shop with that id, or an appropriate error if it is not found.
 
 ```js
@@ -73,7 +73,7 @@ Response
 	404 Not Found: If the coffee shop with given id is not found
 ```
 
-Update:
+#### Update
 Accepts an id and new values for the name, address, latitude, or longitude fields, updates the coffee shop with that id, or returns an appropriate error if it is not found.
 PUT coffeeshops/v1/:id
 Request
@@ -100,7 +100,7 @@ Response
 	404 Not Found: If the coffee shop with given id is not found
 ```
 
-Delete:
+#### Delete
 Accepts an id and deletes the coffee shop with that id, or returns an error if it is not found
 ```js
 Delete a coffee shop 
@@ -119,7 +119,7 @@ Response
 	404 Not Found: If the coffee shop with given id is not found
 ```
 
-Find nearest:
+#### Find nearest
 Accepts an address and returns the closest coffee shop by straight line distance.
 For example, based upon the initial data set, if the user passes in an address of "535 Mission St., San Francisco, CA", the correct response from your server should be Red Door Coffee (id: 16). Another example, using the address "252 Guerrero St, San Francisco, CA 94103, USA", would return Four Barrel Coffee.
 
