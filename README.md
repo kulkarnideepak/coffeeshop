@@ -75,6 +75,8 @@ Response
 
 #### Update
 Accepts an id and new values for the name, address, latitude, or longitude fields, updates the coffee shop with that id, or returns an appropriate error if it is not found.
+```js
+Update a coffee shop
 PUT coffeeshops/v1/:id
 Request
 	Request Path Param
