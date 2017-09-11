@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Quick installation
 
-Ensure that you have npm 2.7.0 or later installed on your computer. Code for coffee shop app can be downloaded from github. Once downloaded, use following command to download dependencies and getting the server ready to start.
+Ensure that you have npm 6.11.0 or later installed on your computer. Code for coffee shop app can be downloaded from github. Once downloaded, use following command to download dependencies and getting the server ready to start.
 
 ```
 npm install
