@@ -24,12 +24,6 @@ fs.readFile(dataFileName, 'utf8', function (err, data) {
 	})
 });
 
-// -- Get the list of all coffee shops
-exports.findAll = function(req, res) {  
-	res.send(map);
-	res.end();
-};
-
 // -- Given an id, return details of coffee shop with matching id
 exports.findById = function(req, res) {
 	if(map.has(req.params.id)){
