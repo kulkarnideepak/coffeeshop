@@ -1,0 +1,101 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Coffeeshop",
+		"_postman_id": "817ee25d-e7bd-7938-f3fc-b1531639c70e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Coffeeshop",
+			"request": {
+				"url": "localhost:8080/coffeeshops/v1/283319310",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Coffeeshop",
+			"request": {
+				"url": "localhost:8080/coffeeshops/v1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"name\": \"Philz Coffee\",\r\n\t\t\"address\": \"300 Folsom St\",\r\n\t\t\"latitude\": \"37.78867984\",\r\n\t\t\"longitude\": \"-122.3928865\"\r\n\t}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Coffeeshop",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/coffeeshops/v1/283319310?name=deepak&address=252+Guerrero+St,+San%20Francisco,+CA%2094103,+USA",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coffeeshops",
+						"v1",
+						"283319310"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "deepak",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "address",
+							"value": "252+Guerrero+St,+San%20Francisco,+CA%2094103,+USA",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FindAll Coffeeshops",
+			"request": {
+				"url": "localhost:8080/coffeeshops/v1/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Coffeeshops",
+			"request": {
+				"url": "localhost:8080/coffeeshops/v1/283319310",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
